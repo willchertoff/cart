@@ -41,7 +41,7 @@ module.exports = React.createClass({
           <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
           <link id="snipcart-theme" type="text/css" href="https://cdn.snipcart.com/themes/base/snipcart.css" rel="stylesheet" />
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-          <script type="text/javascript" id="snipcart" data-api-key="{SNIPCART_API_KEY}"></script>
+          <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" type="text/javascript" id="snipcart" data-api-key={SNIPCART_API_KEY}></script>
         </body>
       </html>
     )
