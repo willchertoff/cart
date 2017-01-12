@@ -20,6 +20,14 @@ class MarkdownWrapper extends React.Component {
         />
         <h1 style={{marginTop: 0}}>{post.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.body }} />
+        <img
+          alt={post.title}
+          src={post.image}
+          style={{
+            margin: '0 auto',
+            display: 'block'
+          }}
+        />
         <em
           style={{
             display: 'block',
