@@ -11,6 +11,7 @@ import Bio from 'components/Bio'
 import Image from 'components/Image';
 
 import '../css/links.css'
+import '../css/images.css'
 
 class BlogIndex extends React.Component {
   render () {
