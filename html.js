@@ -7,6 +7,8 @@ import SNIPCART_API_KEY from './utils/constants'
 
 const BUILD_TIME = new Date().getTime()
 
+import '/css/images.css'
+
 module.exports = React.createClass({
   displayName: 'HTML',
   propTypes: {

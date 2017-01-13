@@ -5,6 +5,7 @@ import ReadNext from '../components/ReadNext'
 import { rhythm } from 'utils/typography'
 import { config } from 'config'
 import Bio from 'components/Bio'
+import Image from 'components/Image'
 
 import '../css/zenburn.css'
 
@@ -20,8 +21,7 @@ class MarkdownWrapper extends React.Component {
         />
         <h1 style={{marginTop: 0}}>{post.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.body }} />
-        <img
-          alt={post.title}
+        <Image
           src={post.image}
           style={{
             margin: '0 auto',

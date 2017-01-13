@@ -8,6 +8,7 @@ import access from 'safe-access'
 import { config } from 'config'
 import include from 'underscore.string/include'
 import Bio from 'components/Bio'
+import Image from 'components/Image';
 
 class BlogIndex extends React.Component {
   render () {
@@ -18,7 +19,6 @@ class BlogIndex extends React.Component {
     ).reverse()
     sortedPages.forEach((page) => {
       // Posts are those with md extension that are not 404 pages OR have a date (meaning they're a react component post).
-      console.log(page)
       if (access(page, 'file.ext') === 'md' && !include(page.path, '/404') || access(page, 'data.date')) {
         const title = access(page, 'data.title') || page.path
         pageLinks.push(
@@ -30,8 +30,7 @@ class BlogIndex extends React.Component {
             }}
           >
             <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
-              <img
-                alt={page.title}
+              <Image
                 src={`${page.path}/${page.data.image}`}
                 style={{
                   display: 'block',
