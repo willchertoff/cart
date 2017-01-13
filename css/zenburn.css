@@ -152,3 +152,11 @@ ul {
   margin-left: 0 !important;
 }
 
+.site-header {
+  transition: all .4s ease;
+  position: relative;
+}
+
+.site-header:hover {
+  transform: scale(.8);
+}

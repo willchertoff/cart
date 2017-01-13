@@ -18,6 +18,7 @@ class Template extends React.Component {
             marginTop: 0,
             textAlign: 'center',
           }}
+          className='site-header'
         >
           <Link
             style={{
@@ -39,6 +40,7 @@ class Template extends React.Component {
             marginTop: 0,
             textAlign: 'center',
           }}
+          className='site-header'
         >
           <Link
             style={{

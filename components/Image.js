@@ -9,15 +9,12 @@ class Image extends Component {
       loaded: false
     }
   }
-
   onImageLoad = () => {
     this.setState({ loaded: true });
   }
   componentDidMount() {
     const imgTag = ReactDOM.findDOMNode(this.refs.img);
     const imgSrc = imgTag.getAttribute('src');
-    // You may want to rename the component if the <Image> definition
-    // overrides window.Image
     let img = new window.Image();
     img.onload = this.onImageLoad;
     img.src = imgSrc;
@@ -29,7 +26,7 @@ class Image extends Component {
       'image-loaded': this.state.loaded,
     });
     return (
-      <img ref="img" {...props} className={rootClassName} />
+      <img ref="img" {...props} className={rootClassName}/>
     );
   }
 }
