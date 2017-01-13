@@ -17,6 +17,7 @@ class Bio extends React.Component {
           alt={`author ${config.authorName}`}
           style={{
             margin: 'auto',
+            display: 'block',
             borderRadius: rhythm(2),
             marginBottom: rhythm(2),
             width: rhythm(2),
