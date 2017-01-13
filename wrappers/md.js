@@ -64,8 +64,21 @@ class MarkdownWrapper extends React.Component {
           data-item-image={post.image}
           data-item-name={post.title}
           data-item-description={post.description}
-          data-item-url={"http://snipcart-gatsby.netlify.com" + post.path}>
-          Buy
+          data-item-url={"http://snipcart-gatsby.netlify.com" + post.path}
+          style={{
+            fontFamily: 'Montserrat, sans-serif',
+            fontWeight: 100,
+            textDecoration: 'none',
+            padding: rhythm(1/2),
+            color: 'black',
+            border: '1px solid black',
+            textTransform: 'uppercase',
+            margin: 'auto',
+            display: 'block',
+            textAlign: 'center'
+          }}
+          >
+          Buy Print
         </a>
         <ReadNext post={post} pages={route.pages} />
       </div>
