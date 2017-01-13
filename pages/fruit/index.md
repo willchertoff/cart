@@ -1,11 +1,11 @@
 ---
-title: Eyal
+title: Hangin
 layout: post
 
-id: "2"
-image: "eyal-print.jpg"
+id: "3"
+image: "travel-6.jpg"
 price: 20.00
-path: "/eyal/"
+path: "/fruit/"
 description: "This is a very moody picture from artist Will Chertoff."
 ---
 

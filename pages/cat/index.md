@@ -1,11 +1,11 @@
 ---
-title: Jack
+title: Cat
 layout: post
 
-id: "2"
-image: "travel-7.jpg"
+id: "3"
+image: "travel-3.jpg"
 price: 20.00
-path: "/jack/"
+path: "/cat/"
 description: "This is a very moody picture from artist Will Chertoff."
 ---
 

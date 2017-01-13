@@ -40,6 +40,7 @@ class MarkdownWrapper extends React.Component {
           src={post.image}
           style={{
             margin: '0 auto',
+            marginBottom: rhythm(2),
             display: 'block'
           }}
         />

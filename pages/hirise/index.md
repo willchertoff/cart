@@ -1,11 +1,11 @@
 ---
-title: Jack
+title: High
 layout: post
 
-id: "2"
-image: "travel-7.jpg"
+id: "3"
+image: "travel.jpg"
 price: 20.00
-path: "/jack/"
+path: "/hirise/"
 description: "This is a very moody picture from artist Will Chertoff."
 ---
 

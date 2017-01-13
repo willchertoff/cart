@@ -1,11 +1,11 @@
 ---
-title: Jack
+title: Yellow Chair
 layout: post
 
-id: "2"
-image: "travel-7.jpg"
+id: "3"
+image: "travel-2.jpg"
 price: 20.00
-path: "/jack/"
+path: "/chair/"
 description: "This is a very moody picture from artist Will Chertoff."
 ---
 

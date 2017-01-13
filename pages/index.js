@@ -56,6 +56,7 @@ class BlogIndex extends React.Component {
                   display: 'block',
                   maxHeight: '400px',
                   margin: 'auto',
+                  marginBottom: rhythm(2)
                 }}
                 />
             </Link>

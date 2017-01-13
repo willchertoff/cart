@@ -15,6 +15,7 @@
   width: 100%;
   opacity: 0;
   transition: opacity .5s ease-in-out;
+  transform: scale(1);
 }
 
 .hoverMe span {
@@ -30,6 +31,7 @@
 
 .hoverMe:hover::after {
   opacity: 1;
+  transform: scale(1.2);
 }
 .hoverMe:hover span {
   opacity: 1;
