@@ -16,14 +16,14 @@ class Bio extends React.Component {
           src={prefixLink(profilePic)}
           alt={`author ${config.authorName}`}
           style={{
-            float: 'left',
-            marginRight: rhythm(1/4),
-            marginBottom: 0,
+            margin: 'auto',
+            borderRadius: rhythm(2),
+            marginBottom: rhythm(2),
             width: rhythm(2),
             height: rhythm(2),
           }}
         />
-        Written by <strong>{config.authorName}</strong> who lives and works in San Francisco building useful things. <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a>
+        Essence is a collection of photos from <strong>{config.authorName}</strong> who lives and develops web applications in Portland, Oregon. <a href="https://instagram.com/behind_your_eye">You should follow him on Instagram</a>
       </p>
     )
   }

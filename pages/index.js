@@ -56,6 +56,7 @@ class BlogIndex extends React.Component {
             {"name": "keywords", "content": "blog, articles"},
           ]}
         />
+        <Bio />
         <ul>
           {pageLinks}
         </ul>
