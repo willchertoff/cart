@@ -9,13 +9,29 @@ import { config } from 'config'
 import include from 'underscore.string/include'
 import Bio from 'components/Bio'
 import Image from 'components/Image';
+import classNames from 'classnames';
 
 import '../css/links.css'
 import '../css/images.css'
 
 class BlogIndex extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loaded: false
+    }
+  }
+
+  componentDidMount() {
+    console.log('mounted');
+    this.setState({ loaded: true });
+  }
   render () {
     const pageLinks = []
+    const { className, ...props } = this.props;
+    const rootClassName = classNames(className, 'image', {
+      'image-loaded': this.state.loaded,
+    });
     // Sort pages.
     const sortedPages = sortBy(this.props.route.pages, (page) =>
       access(page, 'data.date')
@@ -48,7 +64,7 @@ class BlogIndex extends React.Component {
       }
     })
     return (
-      <div>
+      <div className={rootClassName}>
         <Helmet
           title={config.blogTitle}
           meta={[

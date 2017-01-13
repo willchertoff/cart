@@ -23,9 +23,9 @@ class Image extends Component {
     img.src = imgSrc;
   }
   render() {
-    var { className, ...props } = this.props;
-    var imgClasses = 'image';
-    var rootClassName = classNames(className, 'image', {
+    const { className, ...props } = this.props;
+    const imgClasses = 'image';
+    const rootClassName = classNames(className, 'image', {
       'image-loaded': this.state.loaded,
     });
     return (

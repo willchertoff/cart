@@ -4,18 +4,33 @@ import Helmet from "react-helmet"
 import ReadNext from '../components/ReadNext'
 import { rhythm } from 'utils/typography'
 import { config } from 'config'
+import classNames from 'classnames';
 import Bio from 'components/Bio'
 import Image from 'components/Image'
 
 import '../css/zenburn.css'
 
 class MarkdownWrapper extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loaded: false
+    }
+  }
+  componentDidMount() {
+    console.log('mounted');
+    this.setState({ loaded: true });
+  }
   render () {
     const { route } = this.props
     const post = route.page.data
+    const { className, ...props } = this.props;
+    const rootClassName = classNames(className, 'image', 'markdown', {
+      'image-loaded': this.state.loaded,
+    });
 
     return (
-      <div className="markdown">
+      <div className={rootClassName}>
         <Helmet
           title={`${post.title} | ${config.blogTitle}`}
         />
