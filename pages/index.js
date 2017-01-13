@@ -10,6 +10,8 @@ import include from 'underscore.string/include'
 import Bio from 'components/Bio'
 import Image from 'components/Image';
 
+import '../css/links.css'
+
 class BlogIndex extends React.Component {
   render () {
     const pageLinks = []
@@ -29,7 +31,8 @@ class BlogIndex extends React.Component {
               listStyle: 'none',
             }}
           >
-            <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
+            <Link className='hoverMe' style={{boxShadow: 'none', display: 'block'}} to={prefixLink(page.path)}>
+              <span style={{fontSize: rhythm(1/2)}}>{page.data.title}</span>
               <Image
                 src={`${page.path}/${page.data.image}`}
                 style={{

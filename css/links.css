@@ -1,0 +1,38 @@
+.hoverMe {
+  position: relative;
+}
+.hoverMe img {
+  transform: scale(1);
+}
+.hoverMe::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.hoverMe span {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: opacity .4s ease;
+  color: black;
+  z-index: 4;
+}
+
+.hoverMe:hover::after {
+  opacity: 1;
+}
+.hoverMe:hover span {
+  opacity: 1;
+}
+.hoverMe:hover img {
+  transform: scale(1.2);
+}
