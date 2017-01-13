@@ -3,6 +3,7 @@
 }
 .hoverMe img {
   transform: scale(1);
+  transition: transform .1s ease;
 }
 .hoverMe::after {
   content: '';
