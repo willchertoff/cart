@@ -18,6 +18,7 @@ class BlogIndex extends React.Component {
     ).reverse()
     sortedPages.forEach((page) => {
       // Posts are those with md extension that are not 404 pages OR have a date (meaning they're a react component post).
+      console.log(page)
       if (access(page, 'file.ext') === 'md' && !include(page.path, '/404') || access(page, 'data.date')) {
         const title = access(page, 'data.title') || page.path
         pageLinks.push(
@@ -25,9 +26,20 @@ class BlogIndex extends React.Component {
             key={page.path}
             style={{
               marginBottom: rhythm(1/4),
+              listStyle: 'none',
             }}
           >
-            <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>{title}</Link>
+            <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
+              <img
+                alt={page.title}
+                src={`${page.path}/${page.data.image}`}
+                style={{
+                  display: 'block',
+                  maxHeight: '400px',
+                  margin: 'auto',
+                }}
+                />
+            </Link>
           </li>
         )
       }
