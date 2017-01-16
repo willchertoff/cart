@@ -65,7 +65,7 @@ class MarkdownWrapper extends React.Component {
         >
            Back
         </Link>
-        <a 
+{/*        <a 
           href='#' 
           className='snipcart-add-item'
           data-item-id={post.id}
@@ -86,7 +86,7 @@ class MarkdownWrapper extends React.Component {
           }}
           >
           Buy Print
-        </a>
+        </a>*/}
         <ReadNext post={post} pages={route.pages} />
       </div>
     )
