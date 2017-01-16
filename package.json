@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "Cart",
+  "description": "A Gatsby Photo Blog with Snipcart Integration",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Will Chertoff <willchertoff@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/willchertoff/cart"
   },
   "dependencies": {
     "gatsby": "^0.12.22",
@@ -23,15 +23,18 @@
   "devDependencies": {
     "gh-pages": "^0.12.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/willchertoff/cart",
   "keywords": [
-    "gatsby"
+    "photo",
+    "blog",
+    "store",
+    "ecommerce"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/willchertoff/cart.git"
   },
   "scripts": {
     "dev": "gatsby develop",

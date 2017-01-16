@@ -1,8 +1,4 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# Cart
+A static photo site built in React including a super lightweight store run by Snipcart.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
-
-## Running in development
-`gatsby develop`
+I made this site after discovering Gatsby. If you are a front-ender working in React, check it out. 
