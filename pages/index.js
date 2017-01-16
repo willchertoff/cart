@@ -49,9 +49,9 @@ class BlogIndex extends React.Component {
             }}
           >
             <Link className='hoverMe' style={{boxShadow: 'none', display: 'block'}} to={prefixLink(page.path)}>
-              <span style={{fontSize: rhythm(1/2)}}>{page.data.title}</span>
+              {/*<span style={{fontSize: rhythm(2)}}>{page.data.title}</span>*/}
               <Image
-                src={`${page.path}/${page.data.image}`}
+                src={`${page.path}${page.data.image}`}
                 style={{
                   display: 'block',
                   maxHeight: '400px',
@@ -65,7 +65,7 @@ class BlogIndex extends React.Component {
       }
     })
     return (
-      <div className={rootClassName}>
+      <div>
         <Helmet
           title={config.blogTitle}
           meta={[
@@ -74,7 +74,7 @@ class BlogIndex extends React.Component {
           ]}
         />
         <Bio />
-        <ul>
+        <ul className={rootClassName}>
           {pageLinks}
         </ul>
       </div>

@@ -160,3 +160,16 @@ ul {
 .site-header:hover {
   transform: scale(.8);
 }
+
+a {
+  box-shadow: none;
+}
+
+.snipcart-add-item {
+  font-weight: 100;
+  transition: all .2s ease-in-out;
+}
+
+.snipcart-add-item:hover {
+  font-weight: bold;
+}

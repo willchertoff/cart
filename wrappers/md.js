@@ -1,6 +1,7 @@
 import React from 'react'
 import moment from 'moment'
 import Helmet from "react-helmet"
+import { Link } from 'react-router'
 import ReadNext from '../components/ReadNext'
 import { rhythm } from 'utils/typography'
 import { config } from 'config'
@@ -47,16 +48,23 @@ class MarkdownWrapper extends React.Component {
         <em
           style={{
             display: 'block',
-            marginBottom: rhythm(2),
+            marginBottom: rhythm(1),
           }}
         >
           Posted {moment(post.date).format('MMMM D, YYYY')}
         </em>
-        <hr
+        <Link
+          className="back-button"
           style={{
-            marginBottom: rhythm(2),
+            marginBottom: rhythm(1),
+            textAlign: 'center',
+            display: 'block',
+            color: 'black'
           }}
-        />
+          to='/'
+        >
+           Back
+        </Link>
         <a 
           href='#' 
           className='snipcart-add-item'
@@ -68,11 +76,9 @@ class MarkdownWrapper extends React.Component {
           data-item-url={"http://snipcart-gatsby.netlify.com" + post.path}
           style={{
             fontFamily: 'Montserrat, sans-serif',
-            fontWeight: 100,
             textDecoration: 'none',
             padding: rhythm(1/2),
             color: 'black',
-            border: '1px solid black',
             textTransform: 'uppercase',
             margin: 'auto',
             display: 'block',

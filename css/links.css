@@ -2,7 +2,7 @@
   position: relative;
 }
 .hoverMe img {
-  transform: scale(1);
+  // transform: scale(1);
   transition: transform .4s ease-in-out;
 }
 .hoverMe::after {
@@ -11,12 +11,12 @@
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
   height: 100%;
   width: 100%;
   opacity: 0;
   transition: all .4s ease-in-out;
-  transform: scale(1);
+  // transform: scale(1);
 }
 
 .hoverMe span {
@@ -26,17 +26,23 @@
   left: 50%;
   transform: translate(-50%,-50%);
   transition: opacity .4s ease-in-out;
-  color: black;
+  color: white;
+  background-color: transparent;
   z-index: 4;
 }
 
 .hoverMe:hover::after {
   opacity: 1;
-  transform: scale(1.2);
+  // transform: scale(1.2);
 }
 .hoverMe:hover span {
   opacity: 1;
 }
 .hoverMe:hover img {
-  transform: scale(1.2);
+  // transform: scale(1.2);
+}
+
+.back-button:hover {
+  opacity: .78;
+  text-decoration: underline;
 }

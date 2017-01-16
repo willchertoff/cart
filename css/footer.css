@@ -1,0 +1,10 @@
+.footer li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+.footer li a:hover {
+  opacity: .7;
+  text-decoration: underline;
+}
