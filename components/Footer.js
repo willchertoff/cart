@@ -19,10 +19,10 @@ const Footer = () =>
       margin: 'auto',
       fontSize: rhythm(1/2)
     }}>
-      <li><a href="http://willchertoff.com" target="_blank">VSCO</a></li>
-      <li><a href="http://willchertoff.com" target="_blank">Instagram</a></li>
+      <li><a href="http://vsco.co/willchertoff" target="_blank">VSCO</a></li>
+      <li><a href="https://www.instagram.com/behind_your_eye/" target="_blank">Instagram</a></li>
       <li><a href="http://willchertoff.com" target="_blank">Web Development</a></li>
-      <li><a href="http://willchertoff.com" target="_blank">Email</a></li>
+      <li><a href="mailto:willchertoff@gmail.com" target="_blank">Email</a></li>
     </ul>
   </div>
 
